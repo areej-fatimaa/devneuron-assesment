@@ -1,33 +1,63 @@
-# Python cache files
+# =========================
+# Python
+# =========================
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 
-# Virtual environment
+# Virtual environments
 venv/
 env/
 ENV/
 
+# =========================
 # Environment variables
+# =========================
 .env
-.env.*    # any env files like .env.dev, .env.prod
+.env.*
+!.env.example
 
-# Data, outputs, and large files
+# =========================
+# Data / outputs / models
+# =========================
 data/
 outputs/
 screenshots/
-*.pth    # optional: ignore model files if you don't want to push them
+*.pth
 
-# IDE/editor files
+# =========================
+# Node / Frontend
+# =========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Next.js
+.next/
+out/
+build/
+
+# Vite / React
+dist/
+
+# =========================
+# IDE / Editor
+# =========================
 .vscode/
 .idea/
 *.sublime-project
 *.sublime-workspace
 
+# =========================
 # OS files
+# =========================
 .DS_Store
 Thumbs.db
 
+# =========================
 # Logs
+# =========================
 *.log
