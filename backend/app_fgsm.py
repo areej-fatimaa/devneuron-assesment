@@ -12,7 +12,7 @@ from fastapi.middleware.cors import CORSMiddleware
 app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://main.d3abcxyz.amplifyapp.com"],  # Next.js frontend
+    allow_origins=["https://main.d2bebgs5kqxbg.amplifyapp.com"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
