@@ -30,7 +30,7 @@ export default function Home() {
 
     try {
       const API_URL = process.env.NEXT_PUBLIC_API_URL;
-
+      console.log("API URL is:", process.env.NEXT_PUBLIC_API_URL);
        const res = await fetch(`${API_URL}/attack`, {
         method: "POST",
         body: formData,
