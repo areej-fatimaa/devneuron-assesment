@@ -29,7 +29,9 @@ export default function Home() {
     formData.append("epsilon", epsilon.toString());
 
     try {
-      const res = await fetch("http://127.0.0.1:8000/attack", {
+      const API_URL = process.env.NEXT_PUBLIC_API_URL;
+
+       const res = await fetch(`${API_URL}/attack`, {
         method: "POST",
         body: formData,
       });
